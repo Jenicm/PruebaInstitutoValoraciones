@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Usuarios</h1>
+  <table class="table-striped">
+    <tr>
+      <th>Nombre</th>
+      <th>Apellidos</th>
+    </tr>
+    <tr *ngFor="let u of usuariosObservable | async" class="usuarios">
+      <td>{{ u.nombre }}</td>
+      <td>{{ u.apellidos }}</td>
+    </tr>
+  </table>
+</div>
